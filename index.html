@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> The Hunger Games Quiz: With Bootstrap 4 form styles </title>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="pt-3 pb-2">The Hunger Games Quiz: With Bootstrap 4 form styles</h1>
+
+  <div class="row">
+
+    <div class="col-md-6">
+
+
+      <p>The Hunger Games book series written by author Suzzanne Collins in 2008. The book series charted New York Times best seller lists and even went on to become an award-winning movie series that captivated audiences with its spectacle plot, characters and dsytopian world. Below is a quiz to test your knowledge on all of its adventures.
+      Questions are based off of <a href="https://en.wikipedia.org/wiki/The_Hunger_Games">The Hunger Games Wikipedia page here.</a> </p>
+
+  </div>
+
+
+
+<form action="/hungergames.php" method="POST">
+
+<fieldset class="form-group">
+<label class="form-control-label">In which country does the Hunger Games take place? <input type="text"
+  name="country"
+  id="Panem"
+  </label>
+
+
+<label class="form-control-label">Which district is Katniss from? <input type="text"
+    name="district"
+    id="12"
+    </label>
+
+  <p>What is The Hunger Games about?<br><em>Tell us about what you think about the games?</em><br>
+    <textarea class="form-control"
+    name="summary"
+    placeholder="50 words or less"
+    rows="6"
+    cols="50"
+    ></textarea></p>
+
+
+<p>Who is the main character?</p><ol>
+  <li><input class="form-check-input"
+    type="radio"
+    name="characters"
+    value="Katniss Everdeen" checked>
+    Katniss Everdeen</li>
+  <li> <input class="form-check-input"
+    type="radio"
+    name="characters"
+    value="Peeta Mellark">
+    Peeta Mellark</li>
+    <li> <input class="form-check-input"
+      type="radio"
+      name="characters"
+      value="Gale Hawthorne">
+      Gale Hawthorne</li>
+      <li> <input class="form-check-input"
+        type="radio"
+        name="characters"
+        value="President Snow">
+      President Snow</li></ol>
+
+
+  <p>Who has won the Hunger Games?</p>
+        <input class="form-check-input"
+        type="checkbox"
+          name="winners"
+          value="Primrose Everdeen">
+          Katniss Everdeen
+         <input class="form-check-input"
+         type="checkbox"
+          name="winners"
+          value="Finnick Odair" checked>
+          Peeta Mellark
+           <input class="form-check-input"
+           type="checkbox"
+            name="winners"
+            value="Katniss Everdeen" checked>
+            Gale Hawthorne
+            <input   class="form-check-input"
+            type="checkbox"
+              name="winners"
+              value="President Snow">
+            President Snow
+
+
+<p> What is Katniss's signature weapon?<select name="Weapons">
+  <option>Sword</option>
+  <option>Trident</option>
+  <option>Bow and arrow</option>
+  <option>Slingshot</option>
+  <option>Ax</option>
+  <option>Nothing</option>
+  </select></p>
+
+  </form>
+
+      </div>
+    </div>
+
+
+</body>
+
+</html>
